@@ -1,0 +1,14 @@
+<h3>Super chat</h3>
+<p>Username : <input [(ngModel)]="user" /> </p>
+<p>Message : <input [(ngModel)]="message" /> </p>
+
+<button (click)="send()">Envoyer</button>
+<button (click)="sendToGroup()">Envoyer au groupe</button>
+<button (click)="joinGroup()">Rejoindre</button>
+
+<hr />
+<ul>
+  <li *ngFor="let m of messages">
+    {{m}}
+  </li>
+</ul>
